@@ -13,6 +13,12 @@ module "prd" {
 
 terraform {
   required_version = ">= 0.11.0"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
   backend "s3" {
     bucket = "nana-terraform-state"
     region = "ap-northeast-1"
