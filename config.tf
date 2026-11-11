@@ -1,5 +1,5 @@
 module "prd" {
-  source = "github.com/sorah/publikes"
+  source = "git::https://github.com/nna774/publikes.git?ref=c9fde04494249b1eaebcf42313ed796c6ff73dff"
 
   iam_role_prefix = "PublikesPrd"
   name_prefix     = "publikes-prd"
